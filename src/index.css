@@ -1,13 +1,129 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: silver;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  padding:30px
+
+}
+
+.modal{
+position: fixed;
+left:0;
+top:0;
+right:0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+display:flex;
+align-items:center;
+justify-content: center;
+}
+
+.newGameModal{
+  font: 14px "Century Gothic", Futura, sans-serif;
+  padding:50px;
+
+}
+
+.modalContent{
+  width: 1000px;
+  background-color: #fff;
+  padding:50px;
+}
+.modalBody{
+  padding:10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* .game-board {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+  margin: 10px;
+  justify-content: center;
+} */
+
+.navBar{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  border: 1px solid;
+  padding: 20px;
+}
+
+.smallerHead{
+  font-size: 30px;
+
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.horizontalLine {
+  height: 5px;
+  width: 35px;
+  border: 2px;
+}
+
+.verticalLine {
+  height: 35px;
+  width: 5px;
+  border: 2px;
+}
+
+.square {
+  height: 35px;
+  width: 35px;
+}
+
+.dot{
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.newBoard{
+  padding:25px;
+  font: 14px "Century Gothic", Futura, sans-serif;
+
+}
+.MainBoard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
